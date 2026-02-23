@@ -59,5 +59,4 @@ LL1Parser.sln
 │   ├── LL1Parser.csproj
 │   └── Program.cs
 └── README.md
-??? README.md
 ```
