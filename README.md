@@ -1,4 +1,4 @@
-# LL(1) Parser
+﻿# LL(1) Parser
 
 A console-based LL(1) parser implemented in C# (.NET 6). Given a context-free grammar, the tool computes **FIRST** and **FOLLOW** sets, builds the **LL(1) parsing table**, validates whether the grammar is LL(1), and interactively parses input strings while displaying a **parse tree**.
 
@@ -32,11 +32,11 @@ dotnet run --project CompilerProject
 ## Usage
 
 1. Enter the number of productions.
-2. Enter each production in the format `A=?/?/...` where:
-   - The left-hand side is a single uppercase letter (non-terminal).
-   - Productions are separated by `/`.
-   - Use `?` for epsilon (empty string).
-   - The **first** production's left-hand side is treated as the start symbol.
+2. Enter each production in the format `A=α/β/...` where:
+- The left-hand side is a single uppercase letter (non-terminal).
+- Productions are separated by `/`.
+- Use `ε` for epsilon (empty string).
+- The **first** production's left-hand side is treated as the start symbol.
 3. The program will display FIRST/FOLLOW sets and the parsing table.
 4. If the grammar is LL(1), enter strings to parse. Type `exit` to quit.
 
@@ -45,7 +45,7 @@ dotnet run --project CompilerProject
 ```
 Enter number of productions: 3
 Production: E=TQ
-Production: Q=+TQ/?
+Production: Q=+TQ/ε
 Production: T=id
 ```
 
@@ -55,8 +55,9 @@ Production: T=id
 
 ```
 LL1Parser.sln
-??? CompilerProject/
-?   ??? LL1Parser.csproj
-?   ??? Program.cs
+├── CompilerProject/
+│   ├── LL1Parser.csproj
+│   └── Program.cs
+└── README.md
 ??? README.md
 ```
