@@ -1,0 +1,30 @@
+## Build outputs
+bin/
+obj/
+
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code files
+.vscode/
+
+## Rider files
+.idea/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
